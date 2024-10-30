@@ -10,7 +10,7 @@ const useGetAllEmails = () => {
     const fetchEmails = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8080/api/v1/email/getallemails",
+          `${import.meta.env.VITE_API_URL}/api/v1/email/getallemails`,
           {
             headers: {
               "Content-Type": "application/json",
